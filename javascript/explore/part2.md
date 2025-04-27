@@ -55,31 +55,39 @@ For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 1
 ## Data Types
 
 12. Given the above Object, write the notation for:  (These should be in your part2.md)
-- Accessing the value of the name property in the student object
-- Accessing the value of the Grad Year property in the student object
-- Calling the function for the greeting property in the student object
-- Accessing the name property of the object in the Favorite Teacher property in student
-- Access index zero in the array of the courseLoad property of the student object
+    a. Accessing the value of the name property in the student object
+    student.name
+    b. Accessing the value of the Grad Year property in the student object
+    student['Grad Year']
+    c. Calling the function for the greeting property in the student object
+    student.greeting()
+    d. Accessing the name property of the object in the Favorite Teacher property in student
+    student['Favorite Teacher'].name
+    e. Access index zero in the array of the courseLoad property of the student object
+    student.courseLoad[0]
  
 ## Basic Operators & Type Conversion
 
 13. Arithmetic
-A) '3' + 2
-B) '3' - 2
-C) 3 + null
-D) '3' + null
-E) true + 3
-F) false + null
-G) '3' + undefined
-H) '3' - undefined
+    A) '3' + 2 = '32' because integers map to their exact string representation and the + concatenates the two strings
+    B) '3' - 2 = 1 because the string gets converted to a number to perform the subtraction operation
+    C) 3 + null = 0 because null is 0 when converted to a number (since both 3 and null are not strings)
+    D) '3' + null = '3null' because '3' is a string and + concatenates strings, so null gets converted to the string 'null'
+    E) true + 3 = 4 because true gets converted to the number 1
+    F) false + null = 0 because both false and null get converted to the number 0 (since both are not strings)
+    G) '3' + undefined = '3undefined' because '3' is a string, so undefined gets converted to the string 'undefined' and then the two strings are concatenated
+    H) '3' - undefined = NaN because '3' gets converted to the number 3 (for the subtraction operation) and undefined is converted to NaN. Anything minus NaN equals NaN.
+
 14. Comparison
-A) '2' > 1
-B) '2' < '12'
-C) 2 == '2'
-D) 2 === '2'
-E) true == 2
-F) true === Boolean(2)
+    A) '2' > 1 is true because '2' gets converted to the number 2 which is larger than 1
+    B) '2' < '12' is false because the lexigraphical ordering of the two string '2' and '12' are compared and '2' is after '1' so the lexigraphical order of '2' is greater than '12'
+    C) 2 == '2' is true because '2' gets converted to the number 2 so they are equal
+    D) 2 === '2' is false because the types are different
+    E) true == 2 is false because true gets converted to the number 1  which is not equal to 2
+    F) true === Boolean(2) is true because Boolean(2) is true since anything other than 0 in Boolean is true
+
 15. Explain the difference between the == and === operators.
+    == is a Loose Equality so it compares elements after converting their types to match (as best it can). === is a Strict Equality so it compares elements and their types, so their types and element values have to be the same (without conversion) for === to be true. 
 
 ## loops
 16. Given the above Object, write a for...in loop that will iterate through it and print out the value of the property if the property starts with the letter r, or if the value of that property is an odd number.  (This should be in a JS file part2-question16.js)

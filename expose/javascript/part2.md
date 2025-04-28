@@ -1,52 +1,58 @@
 # Part 2
 
-1. ^^^ What will happen at line 12 and why? If the code causes an error, explain why.   
+1. What will happen at line 12 and why? If the code causes an error, explain why.   
 3
 
-2. ^^^ What will happen at line 13 and why? If the code causes an error, explain why.   
+2. What will happen at line 13 and why? If the code causes an error, explain why.   
 150
 
-3. ^^^ What will happen at line 14 and why? If the code causes an error, explain why.   
+3. What will happen at line 14 and why? If the code causes an error, explain why.   
 150 
 
-4. ^^^ What will this function return? Give a brief explanation why. If the code causes an error, explain why.    
+4. What will this function return? Give a brief explanation why. If the code causes an error, explain why.    
 The function returns an array of discounted prices calculated from the original array of prices and the given discounted rate.   
 The function discountPrices takes an array of original prices and a discount rate (e.g., 0.5 for 50% off). Inside the function, it loops through each price, calculates the discounted price by multiplying the original price by (1 - discount), and then pushes the discounted price into a new array called discounted. After finishing the loop, the function returns the discounted array, which contains all the discounted prices.   
 For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 100, 150], because each price is cut in half.
 
-5. ^^^ What will happen at line 12 and why?  If the code causes an error, explain why. ^^^ (assume this function is being called like the others: discountPrices([100, 200, 300], 0.5)).   
+5. What will happen at line 12 and why?  If the code causes an error, explain why. ^^^ (assume this function is being called like the others: discountPrices([100, 200, 300], 0.5)).   
+```
     console.log(i);   
                 ^   
 ReferenceError: i is not defined   
     at discountPrices   
+```
 The code errored at line 12 because i was declared using let inside the for loop block, and let is block-scoped. Therefore, i does not exist outside the for loop block, causing a ReferenceError when trying to access it outside the for loop block.
 
-6. ^^^ What will happen at line 13 and why? If the code causes an error, explain why.    
+6. What will happen at line 13 and why? If the code causes an error, explain why.    
+```
     console.log(discountedPrice);   
                 ^   
 ReferenceError: discountedPrice is not defined   
     at discountPrices   
+```
 The code errored at line 13 because discountedPrice was declared using let inside the for loop block, and let is block-scoped. Therefore, discountedPrice does not exist outside the for loop block, causing a ReferenceError when trying to access it outside the for loop block.
 
-7. ^^^ What will happen at line 14 and why? If the code causes an error, explain why.    
+7. What will happen at line 14 and why? If the code causes an error, explain why.    
 150
 
-8. ^^^ What will this function return? Give a brief explanation. If the code causes an error, explain why.    
+8. What will this function return? Give a brief explanation. If the code causes an error, explain why.    
 The function returns an array of discounted prices calculated from the original array of prices and the given discounted rate.   
 The function discountPrices takes an array of original prices and a discount rate (e.g., 0.5 for 50% off). Inside the function, it loops through each price, calculates the discounted price by multiplying the original price by (1 - discount), and then pushes the discounted price into a new array called discounted. After finishing the loop, the function returns the discounted array, which contains all the discounted prices.   
 For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 100, 150], because each price is cut in half.
 
-9.  ^^^ What will happen at line 11 and why? If the code causes an error, explain why.    
+9. What will happen at line 11 and why? If the code causes an error, explain why.    
+```
     console.log(i);   
                 ^   
 ReferenceError: i is not defined   
     at discountPrices   
+```
 The code errored at line 11 because i was declared using let inside the for loop block, and let is block-scoped. Therefore, i does not exist outside the for loop block, causing a ReferenceError when trying to access it outside the for loop block.
 
-10. ^^^ What will happen at line 12 and why? If the code causes an error, explain why.    
+10. What will happen at line 12 and why? If the code causes an error, explain why.    
 3
 
-11. ^^^ What will this function return? Give a brief explanation. If the code causes an error, explain why.    
+11. What will this function return? Give a brief explanation. If the code causes an error, explain why.    
 The function returns an array of discounted prices calculated from the original array of prices and the given discounted rate.   
 The function discountPrices takes an array of original prices and a discount rate (e.g., 0.5 for 50% off). Inside the function, it loops through each price, calculates the discounted price by multiplying the original price by (1 - discount), and then pushes the discounted price into a new array called discounted. After finishing the loop, the function returns the discounted array, which contains all the discounted prices.   
 For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 100, 150], because each price is cut in half.

@@ -94,7 +94,13 @@ For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 1
 
 ## Functions
 17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development. 
+[ 2, 4, 6 ] because each of the elements in the passed-in array [1,2,3] are multiplied by 2 in the doSomthing allback function. This callback function is called upon each element by the for loop in modifyArray and its results are stored in a new array, newArr, that gets returned. 
 
 ## setInterval(), setTimeout(), clearTimeout()
 18. The above program only prints out the time once when executed. Modify this code such that the program prints out the current time every second.  (This should be a JS file - part2-question18.js)
+
 19. What is the output of the above code? (This should be in your part2.md)
+1
+4
+3
+2

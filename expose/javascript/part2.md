@@ -54,7 +54,7 @@ For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 1
 
 ## Data Types
 
-12. Given the above Object, write the notation for:  (These should be in your part2.md)   
+12. Given the above Object, write the notation for:  (These should be in your part2.md)    
     a. Accessing the value of the name property in the student object   
     student.name   
     b. Accessing the value of the Grad Year property in the student object   
@@ -68,7 +68,7 @@ For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 1
  
 ## Basic Operators & Type Conversion
 
-13. Arithmetic   
+13. Arithmetic    
     A) '3' + 2 = '32' because integers map to their exact string representation and the + concatenates the two strings   
     B) '3' - 2 = 1 because the string gets converted to a number to perform the subtraction operation   
     C) 3 + null = 0 because null is 0 when converted to a number (since both 3 and null are not strings)   
@@ -78,7 +78,7 @@ For the input [100, 200, 300] and a discount of 0.5, the function returns [50, 1
     G) '3' + undefined = '3undefined' because '3' is a string, so undefined gets converted to the string 'undefined' and then the two strings are concatenated   
     H) '3' - undefined = NaN because '3' gets converted to the number 3 (for the subtraction operation) and undefined is converted to NaN. Anything minus NaN equals NaN. 
 
-14. Comparison
+14. Comparison   
     A) '2' > 1 is true because '2' gets converted to the number 2 which is larger than 1   
     B) '2' < '12' is false because the lexigraphical ordering of the two string '2' and '12' are compared and '2' is after '1' so the lexigraphical order of '2' is greater than '12'   
     C) 2 == '2' is true because '2' gets converted to the number 2 so they are equal   

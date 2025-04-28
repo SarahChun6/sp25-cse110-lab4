@@ -15,10 +15,10 @@ Because var is function scoped while let and const are block scoped (more intuit
 values added:  20
 
 5. What is printed by line 13? If the code returns an error, explain why.   
-console.log('final result: ', result); //here  
+```console.log('final result: ', result); //here  
                                   ^      
 ReferenceError: result is not defined    
-    at sumValues   
+    at sumValues   ```
 The code errored at line 13 because result was declared using let inside the if (add) block, and let is block-scoped. Therefore, result does not exist outside the if block, causing a ReferenceError when trying to access it outside the if block.
 
 ## const declaration
